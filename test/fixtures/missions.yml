@@ -1,0 +1,31 @@
+# == Schema Information
+#
+# Table name: missions
+#
+#  id          :integer          not null, primary key
+#  name        :text
+#  description :text
+#  difficulty  :integer
+#  exp         :integer
+#  created_at  :datetime
+#  updated_at  :datetime
+#  blocking    :boolean
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyText
+  description: MyText
+  difficulty: 1
+  exp: 1
+  next_mission: 1
+  last_mission: 1
+
+two:
+  name: MyText
+  description: MyText
+  difficulty: 1
+  exp: 1
+  next_mission: 1
+  last_mission: 1

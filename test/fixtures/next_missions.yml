@@ -1,0 +1,20 @@
+# == Schema Information
+#
+# Table name: next_missions
+#
+#  id              :integer          not null, primary key
+#  mission_id      :integer
+#  next_mission_id :integer
+#  created_at      :datetime
+#  updated_at      :datetime
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  mission_id: 1
+  next_mission_id: 1
+
+two:
+  mission_id: 1
+  next_mission_id: 1

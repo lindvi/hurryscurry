@@ -1,0 +1,28 @@
+<h1>Listing game_sessions</h1>
+
+<table class="table table-condensed">
+  <thead>
+    <tr>
+      <th>Namn</th>
+      <th>Aktiv</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @game_sessions.each do |game_session| %>
+      <tr>
+        <td><%= game_session.name %></td>
+        <td><%= game_session.active %></td>
+        <td><%= link_to 'Show', game_session %></td>
+        <td><%= link_to 'Edit', edit_game_session_path(game_session) %></td>
+        <td><%= link_to 'Destroy', game_session, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Game session', new_game_session_path %>

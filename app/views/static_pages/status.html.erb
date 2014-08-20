@@ -1,0 +1,126 @@
+<div class="scoreboard">
+	<% @teams.each do |team| %>
+		<div class="player-box">
+			<%= team.name %>
+		</div>
+	<% end %>
+</div>
+
+
+<div class="row">
+	<div class="col-xs-3">
+		<div class="mission-box">
+			<%= @missions.find(4).name %>
+		</div>
+		<div class="mission-box">
+			<%= @missions.find(6).name %>
+		</div>
+		<div class="mission-box">
+			<%= @missions.find(7).name %>
+		</div>
+		<div class="mission-box">
+			<%= @missions.find(8).name %>
+		</div>
+	</div>
+	<div class="col-xs-1">
+	</div>
+	<div class="col-xs-3">
+		<div class="mission-box">
+			<%= @missions.find(5).name %>
+		</div>
+		<div class="mission-box empty">
+		</div>
+		<div class="mission-box empty">
+		</div>
+		<div class="mission-box">
+			<%= @missions.find(9).name %>
+		</div>
+	</div>
+	<div class="col-xs-1">
+		<div class="mission-box empty">
+		</div>
+		<div class="mission-box empty half">
+		</div>
+		<div class="mission-box">
+			<%= @missions.find(19).name %>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-xs-offset-9 col-xs-3">
+		<div class="mission-box">
+			<%= @missions.find(21).name %>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-xs-offset-2 col-xs-3">
+		<div class="mission-box">
+			<%= @missions.find(10).name %>
+		</div>
+		<div class="mission-box">
+			<%= @missions.find(11).name %>
+		</div>
+		<div class="mission-box">
+			<%= @missions.find(12).name %>
+		</div>
+		<div class="mission-box">
+			<%= @missions.find(13).name %>
+		</div>
+		<div class="mission-box">
+			<%= @missions.find(14).name %>
+		</div>
+		<div class="mission-box">
+			<%= @missions.find(15).name %>
+		</div>
+		<div class="mission-box">
+			<%= @missions.find(16).name %>
+		</div>
+		<div class="mission-box">
+			<%= @missions.find(17).name %>
+		</div>
+		<div class="mission-box">
+			<%= @missions.find(18).name %>
+		</div>
+	</div>
+
+	<div class="col-xs-offset-2 col-xs-1">
+		<div class="mission-box empty">
+		</div>
+		<div class="mission-box empty">
+		</div>
+		<div class="mission-box empty">
+		</div>
+		<div class="mission-box empty">
+		</div>
+		<div class="mission-box">
+			<%= @missions.find(20).name %>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<!--
+4 Hitta C3PO
+5 Dödsstjärnas kraftfält
+6 Införskaffa bomben
+7 Sök upp Obi-wan Kenobi 
+8 1000-årig service på falken
+9 Genomgå jedi-träning
+10 Hitta ritning av dödstjärnan
+11 Ny stridsteknik
+12 Befria Han Solo
+13 Smuggla kryddor
+14 Laga Luke
+15 Släktforska åt Luke
+16 Prisjägare
+17 Rädda prinsessan Leia
+18 Hitta smuggelgodset
+19 4
+20 2
+21 Spräng dödstjärnan
+-->

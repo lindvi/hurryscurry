@@ -1,0 +1,38 @@
+<%= form_for(@mission) do |f| %>
+  <% if @mission.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@mission.errors.count, "error") %> prohibited this mission from being saved:</h2>
+
+      <ul>
+      <% @mission.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.label :name %><br>
+    <%= f.text_area :name, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :description %><br>
+    <%= f.text_area :description, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :group %>
+    <%= f.number_field :group, class: "form-control" %>
+  </div>
+  <div class="form-group">
+
+    <%= f.label :starting %><br />
+    <%= f.label :starting, "Yes", :value => "true"  %>
+    <%= f.radio_button :starting, true %>
+    <%= f.label :starting, "No", :value => "false" %>
+    <%= f.radio_button :starting, false, :checked => true %>
+
+   </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
